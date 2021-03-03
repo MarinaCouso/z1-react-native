@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { ScreenTitle } from './components/TextComponents';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>HelloBaby! Hasta luegui baby</Text>
+      <ScreenTitle text='Learn' />
       <StatusBar style='auto' />
     </View>
   );
@@ -14,8 +15,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'purple',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    padding: '20px',
   },
 });

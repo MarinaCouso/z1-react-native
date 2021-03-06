@@ -1,16 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { MenuItemTitle, AppTitle } from './styles';
 
 const ScreenTitle = ({ text }) => {
-  return <Text style={styles.text}>{text}</Text>;
+  return <AppTitle>{text}</AppTitle>;
 };
 
-const styles = StyleSheet.create({
-  text: {
-    color: 'white',
-    fontSize: '50px',
-    fontWeight: 'bold',
-  },
-});
+const MenuTitle = ({ text }) => {
+  return <MenuItemTitle>{text}</MenuItemTitle>;
+};
 
-export { ScreenTitle };
+export { ScreenTitle, MenuTitle };

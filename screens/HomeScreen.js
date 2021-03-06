@@ -4,9 +4,9 @@ import HorizontalScrollMenu from '../components/HorizontalScrollMenu';
 import Card from '../components/Card';
 import { ScreenContainer, ContentContainer, HeaderContainer } from '../components/styles';
 
-const HomeScreen = (options) => {
+const HomeScreen = () => {
   const menuFilters = ['All', 'Favorites', 'HarmReduction', 'Integration', 'Mindfullness'];
-  console.log({ options });
+
   return (
     <ScreenContainer>
       <HeaderContainer>

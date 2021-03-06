@@ -38,14 +38,17 @@ export const AppTitle = styled.Text`
   margin: ${hp(2)}px 0 ${hp(2)}px 0;
 `;
 
-export const MenuItemTitle = styled.TouchableOpacity`
-  color: yellow;
-  font-family: sans;
-  font-size: ${hp(2)}px;
+export const MenuItemButton = styled.TouchableOpacity`
   padding: ${hp(1)}px ${wp(1)}px;
   border: 1px solid white;
   border-radius: ${wp(1.5)}px;
   margin-right: ${wp(1)}px;
+`;
+
+export const MenuItemTitle = styled.Text`
+  color: yellow;
+  font-family: sans;
+  font-size: ${hp(2)}px;
 `;
 
 export const CardContainer = styled.View`
@@ -66,7 +69,7 @@ export const CardImage = styled.Image`
   width: ${wp(39.5)}px;
 `;
 
-export const CardTitle = styled.Text`
+export const CardTitleText = styled.Text`
   color: purple;
   font-family: sans;
   font-size: ${hp(2)}px;

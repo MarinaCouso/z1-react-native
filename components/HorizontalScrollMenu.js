@@ -11,4 +11,4 @@ const HorizontalScrollMenu = ({ menuFilters }) => {
   );
 };
 
-export { HorizontalScrollMenu };
+export default HorizontalScrollMenu;

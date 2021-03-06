@@ -4,7 +4,6 @@ import MenuItem from './MenuItem';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 const HorizontalScrollMenu = ({ menuFilters }) => {
-  console.log(menuFilters);
   return (
     <HeaderContainer>
       <ScrollMenu dragging={true} data={!!menuFilters && menuFilters.map((filter, index) => <MenuItem key={index} text={filter} />)} />

@@ -33,7 +33,7 @@ const HomeScreen = () => {
 
   const allCategories = items.map((lesson) => lesson.category);
   const menuCategories = Array.from(new Set(allCategories));
-  let filteredData = items.filter((item) => (selectedCategoryId !== '' ? item.category.id === selectedCategoryId : true));
+  let filteredData = items.filter((item) => (selectedCategoryId === '' ? true : item.category.id === selectedCategoryId));
 
   return (
     <ScreenContainer>

@@ -10,6 +10,13 @@ const ITEMS_QUERY = gql`
     items {
       id
       title
+      image
+      content
+      author
+      category {
+        id
+        title
+      }
     }
   }
 `;
@@ -17,7 +24,7 @@ const ITEMS_QUERY = gql`
 const HomeScreen = () => {
   const menuFilters = ['All', 'Favorites', 'HarmReduction', 'Integration', 'Mindfullness'];
   const { loading, error, data } = useQuery(ITEMS_QUERY);
-
+  console.log({ data });
   loading && console.log('Loading...');
   error && console.log(`Error! ${error.message}`);
 

@@ -2,9 +2,9 @@ import React from 'react';
 import { MenuTitle } from './TextComponents';
 import { MenuItemButton } from './styles';
 
-const MenuItem = ({ text }) => {
+const MenuItem = ({ text, onPress }) => {
   return (
-    <MenuItemButton>
+    <MenuItemButton onPress={onPress}>
       <MenuTitle text={text} />
     </MenuItemButton>
   );

@@ -2,12 +2,12 @@ import React from 'react';
 import { CardContainer, CardImage, CardContentContainer } from './styles';
 import { CardTitle } from './TextComponents';
 
-const Card = ({ text }) => {
+const Card = ({ lesson }) => {
   return (
     <CardContainer>
-      <CardImage source={{ uri: 'https://picsum.photos/750/400' }} resizeMode='contain' />
+      <CardImage source={{ uri: lesson.image }} resizeMode='contain' />
       <CardContentContainer>
-        <CardTitle text={text} />
+        <CardTitle text={lesson.title} />
       </CardContentContainer>
     </CardContainer>
   );

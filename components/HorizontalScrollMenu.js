@@ -3,10 +3,11 @@ import { HeaderContainer } from './styles';
 import MenuItem from './MenuItem';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 
-const HorizontalScrollMenu = ({ menuFilters }) => {
+const HorizontalScrollMenu = ({ menuCategories }) => {
+  console.log(menuCategories);
   return (
     <HeaderContainer>
-      <ScrollMenu dragging={true} data={!!menuFilters && menuFilters.map((filter, index) => <MenuItem key={index} text={filter} />)} />
+      <ScrollMenu dragging={true} data={!!menuCategories && menuCategories.map((category) => <MenuItem key={category.id} text={category.title} />)} />
     </HeaderContainer>
   );
 };

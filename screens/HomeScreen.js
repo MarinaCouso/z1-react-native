@@ -22,17 +22,19 @@ const ITEMS_QUERY = gql`
 `;
 
 const HomeScreen = () => {
-  const menuFilters = ['All', 'Favorites', 'HarmReduction', 'Integration', 'Mindfullness'];
   const { loading, error, data } = useQuery(ITEMS_QUERY);
   console.log({ data });
   loading && console.log('Loading...');
   error && console.log(`Error! ${error.message}`);
 
+  const allCategories = !!data ? data.items.map((lesson) => lesson.category) : [];
+  const menuCategories = Array.from(new Set(allCategories));
+
   return (
     <ScreenContainer>
       <HeaderContainer>
         <ScreenTitle text='📖 Learn' />
-        <HorizontalScrollMenu text='Hello' menuFilters={menuFilters} />
+        <HorizontalScrollMenu text='Hello' menuCategories={menuCategories} />
       </HeaderContainer>
       <ContentContainer>
         {!!data &&

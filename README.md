@@ -1,8 +1,9 @@
-Lessons Kit App tipping_hand_person
+## Lessons Kit App :information_desk_person:
 
 Simple app to get content of lessons from GraphQL backend throught Apollo and using React Native Expo.
 
-How can I run it?
+
+## How can I run it?
 
 You would just need to install it:
 

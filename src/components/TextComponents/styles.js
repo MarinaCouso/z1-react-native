@@ -20,4 +20,6 @@ export const CardTitleText = styled.Text`
   font-family: sans;
   font-size: ${hp(2)}px;
   font-weight: bold;
+  text-overflow: clip;
+  width: 100%;
 `;

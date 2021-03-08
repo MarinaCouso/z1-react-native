@@ -17,7 +17,7 @@ export const CardImage = styled.Image`
   border-top-right-radius: ${wp(2)}px;
   border-top-left-radius: ${wp(2)}px;
   height: ${hp(10)}px;
-  width: ${wp(39.5)}px;
+  width: 100%;
 `;
 
 export const CardContentContainer = styled.TouchableOpacity`

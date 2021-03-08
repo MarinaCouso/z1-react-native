@@ -5,7 +5,7 @@ import { CardTitle } from '../TextComponents/view';
 const Card = ({ lesson }) => {
   return (
     <CardContainer>
-      <CardImage source={{ uri: lesson.image }} resizeMode='contain' />
+      <CardImage source={{ uri: lesson.image }} resizeMode='cover' />
       <CardContentContainer>
         <CardTitle text={lesson.title} />
       </CardContentContainer>

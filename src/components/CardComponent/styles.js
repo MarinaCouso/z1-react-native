@@ -9,8 +9,8 @@ export const CardContainer = styled.View`
   border: 1px solid white;
   border-radius: ${wp(2)}px;
   height: ${hp(40)}px;
-  width: ${wp(35)}px;
-  margin: ${hp(2)}px ${wp(2)}px;
+  width: 40%;
+  margin: ${hp(2)}px;
 `;
 
 export const CardImage = styled.Image`

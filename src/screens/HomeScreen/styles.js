@@ -20,12 +20,12 @@ export const HeaderContainer = styled.View`
 
 export const ContentContainer = styled.ScrollView.attrs({
   contentContainerStyle: {
-    flex: 1,
     backgroundColor: 'purple',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
+    paddingTop: hp(2),
   },
 })``;

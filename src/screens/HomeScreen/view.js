@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { ScreenTitle } from '../components/TextComponents';
-import HorizontalScrollMenu from '../components/HorizontalScrollMenu';
-import Card from '../components/Card';
-import { ScreenContainer, ContentContainer, HeaderContainer } from '../components/styles';
+import { ScreenTitle } from '../../components/TextComponents/view';
+import HorizontalScrollMenu from '../../components/HorizontalScrollMenuComponent/view';
+import Card from '../../components/CardComponent/view';
+import { ScreenContainer, ContentContainer, HeaderContainer } from './styles';
 import { useQuery, gql } from '@apollo/client';
 
 const ITEMS_QUERY = gql`

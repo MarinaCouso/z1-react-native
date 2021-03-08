@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './src/screens/HomeScreen';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const Stack = createStackNavigator();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderContainer } from './styles';
-import MenuItem from './MenuItem';
+import MenuItem from '../MenuItemComponent';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 const HorizontalScrollMenu = ({ menuCategories, setSelectedCategoryId }) => {

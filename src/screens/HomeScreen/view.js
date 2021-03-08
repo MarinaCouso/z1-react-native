@@ -41,7 +41,7 @@ const HomeScreen = () => {
         <ScreenTitle text='📖 Learn' />
         <HorizontalScrollMenu text='Hello' menuCategories={menuCategories} setSelectedCategoryId={setSelectedCategoryId} />
       </HeaderContainer>
-      <ContentContainer>
+      <ContentContainer showsVerticalScrollIndicator={false}>
         {!!filteredData &&
           filteredData.map((lesson, index) => {
             return <Card key={index} lesson={lesson} />;

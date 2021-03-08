@@ -23,67 +23,9 @@ export const ContentContainer = styled.ScrollView.attrs({
     flex: 1,
     backgroundColor: 'purple',
     display: 'flex',
-    flexDirection: 'column',
-    alignContent: 'center',
-    justifyContent: 'flex - start',
-    padding: hp(4),
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
   },
 })``;
-
-export const AppTitle = styled.Text`
-  color: yellow;
-  font-family: sans;
-  font-size: ${hp(4)}px;
-  align-self: center;
-  margin: ${hp(2)}px 0 ${hp(2)}px 0;
-`;
-
-export const MenuItemButton = styled.TouchableOpacity`
-  padding: ${hp(1)}px ${wp(1)}px;
-  border: 1px solid white;
-  border-radius: ${wp(1.5)}px;
-  margin-right: ${wp(1)}px;
-`;
-
-export const MenuItemTitle = styled.Text`
-  color: yellow;
-  font-family: sans;
-  font-size: ${hp(2)}px;
-`;
-
-export const CardContainer = styled.View`
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-start;
-  border: 1px solid white;
-  border-radius: ${wp(2)}px;
-  height: ${hp(40)}px;
-  width: ${wp(40)}px;
-`;
-
-export const CardImage = styled.Image`
-  border-top-right-radius: ${wp(2)}px;
-  border-top-left-radius: ${wp(2)}px;
-  height: ${hp(10)}px;
-  width: ${wp(39.5)}px;
-`;
-
-export const CardTitleText = styled.Text`
-  color: purple;
-  font-family: sans;
-  font-size: ${hp(2)}px;
-  font-weight: bold;
-`;
-
-export const CardContentContainer = styled.TouchableOpacity`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom-right-radius: ${wp(2)}px;
-  border-bottom-left-radius: ${wp(2)}px;
-  background-color: pink;
-  height: ${hp(30)}px;
-  padding: ${hp(2)}px ${wp(2)}px;
-`;

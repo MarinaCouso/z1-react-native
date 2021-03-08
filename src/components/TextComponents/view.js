@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuItemTitle, AppTitle, CardTitleText } from './styles';
+import { MenuItemTitle, AppTitle, CardTitleText, CardCategoryText, CardContentText } from './styles';
 
 const ScreenTitle = ({ text }) => {
   return <AppTitle>{text}</AppTitle>;
@@ -13,4 +13,12 @@ const CardTitle = ({ text }) => {
   return <CardTitleText>{text}</CardTitleText>;
 };
 
-export { ScreenTitle, MenuTitle, CardTitle };
+const CardCategory = ({ text }) => {
+  return <CardCategoryText>{text}</CardCategoryText>;
+};
+
+const CardContent = ({ text }) => {
+  return <CardContentText>{text}</CardContentText>;
+};
+
+export { ScreenTitle, MenuTitle, CardTitle, CardCategory, CardContent };

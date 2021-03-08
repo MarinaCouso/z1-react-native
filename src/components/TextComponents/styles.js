@@ -23,3 +23,21 @@ export const CardTitleText = styled.Text`
   text-overflow: clip;
   width: 100%;
 `;
+
+export const CardCategoryText = styled.Text`
+  text-transform: uppercase;
+  font-size: ${hp(1.5)}px;
+  color: yellow;
+  font-family: sans;
+  margin-bottom: ${hp(1)}px;
+`;
+
+export const CardContentText = styled(CardTitleText)`
+  align-self: left;
+  text-overflow: fade;
+  overflow: hidden;
+  font-weight: regular;
+  font-size: ${hp(1.5)}px;
+  width: 100%;
+  padding-top: ${hp(1)}px;
+`;

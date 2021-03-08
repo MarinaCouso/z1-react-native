@@ -1,6 +1,6 @@
 ## Lessons Kit App :information_desk_person:
 
-Simple app to get content of lessons from GraphQL backend throught Apollo and using React Native Expo.
+Simple app to show content of lessons from GraphQL backend throught Apollo and using React Native Expo.
 
 
 ## How can I run it?
